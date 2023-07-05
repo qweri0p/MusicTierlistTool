@@ -164,9 +164,9 @@ def sendInfo():
         tags.append(tag4.get())
 
     realartists = []
-    if realartist != "":
+    if realartist.get() != "":
         realartists.append(realartist.get())
-    if realartist2 != "":
+    if realartist2.get() != "":
         realartists.append(realartist2.get())
     data.insertNewRecord(recordname.get(),artistname.get(),
                         fetchMetadata.getdata(box4.get())[2],
